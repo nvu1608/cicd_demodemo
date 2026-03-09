@@ -1,0 +1,31 @@
+name: C++ CI/CD Pipeline (New Structure)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    name: 🏗️ Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Clone Repository
+      uses: actions/checkout@v3
+
+    - name: 🛠️ Configure CMake
+      run: cmake -B build -S .
+
+    - name: 🏗️ Build Project
+      run: cmake --build build
+
+    - name: ✅ Run Unit Tests
+      run: ./build/run_tests
+
+    - name: 📦 Upload App Binary
+      uses: actions/upload-artifact@v3
+      with:
+        name: math-app
+        path: build/app

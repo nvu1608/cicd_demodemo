@@ -1,0 +1,5 @@
+/home/uynv/Desktop/demo-repo/build/CMakeFiles/MathLib.dir
+/home/uynv/Desktop/demo-repo/build/CMakeFiles/app.dir
+/home/uynv/Desktop/demo-repo/build/CMakeFiles/run_tests.dir
+/home/uynv/Desktop/demo-repo/build/CMakeFiles/edit_cache.dir
+/home/uynv/Desktop/demo-repo/build/CMakeFiles/rebuild_cache.dir
