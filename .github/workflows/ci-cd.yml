@@ -25,7 +25,7 @@ jobs:
       run: ./build/run_tests
 
     - name: 📦 Upload App Binary
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: math-app
         path: build/app
